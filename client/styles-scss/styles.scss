@@ -1,0 +1,20 @@
+/* Global */
+@import "global/variables";
+@import "global/mixins";
+@import "global/visually-hidden";
+@import "global/fonts";
+@import "global/container";
+@import "global/root";
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/head-panel";
+@import "blocks/user";
+@import "blocks/tracks";
+@import "blocks/pagination";
+@import "blocks/register";
+@import "blocks/login";
+@import "blocks/custom-input";
+@import "blocks/modal";
+@import "blocks/track-play";

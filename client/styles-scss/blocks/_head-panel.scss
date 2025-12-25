@@ -1,0 +1,31 @@
+.head-panel {
+    display: flex;
+    gap: 30px;
+    margin: 0 0 37px;
+
+    &__search {
+        max-width: 798px;
+        width: 100%;
+
+        &-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: $color-white-smoke;
+            width: 100%;
+            padding: 15px 12px;
+            border-radius: 30px;
+            cursor: text;
+        }
+
+        &-input {
+            outline: none;
+            border: none;
+            background-color: transparent;
+
+            &::placeholder {
+                text-transform: uppercase;
+            }
+        }
+    }
+}

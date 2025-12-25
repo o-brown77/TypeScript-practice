@@ -1,0 +1,32 @@
+.pagination {
+    display: flex;
+    gap: 10px;
+    margin: 0 auto;
+
+    &__btn {
+        font-size: 20px;
+        line-height: 24px;
+        color: $color-dark-gray-1;
+        position: relative;
+        height: 40px;
+        width: 40px;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 48px;
+            height: 48px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 0;
+        }
+
+        &--active {
+            font-size: 24px;
+            line-height: 28px;
+            color: inherit;
+        }
+    }
+}

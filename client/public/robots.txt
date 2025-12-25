@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Карта сайта
+Sitemap: https://vibecast-studio.example.com/sitemap.xml
+
+# Запрещаем индексировать dev-пути
+Disallow: /dev/
+Disallow: /test/

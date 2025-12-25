@@ -1,0 +1,67 @@
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 246px;
+    padding: 3px 10px;
+    border-radius: 30px;
+    background-color: $color-white-smoke;
+
+    @media (max-width: 900px) {
+        background-color: transparent;
+        width: unset;
+    }
+
+    &-info {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+
+        @media (max-width: 900px) {
+            gap: 8px;
+        }
+    }
+
+    &-avatar {
+        border-radius: 50%;
+        height: 48px;
+        width: 48px;
+        position: relative;
+        z-index: 2;
+        top: 0;
+        background: repeating-linear-gradient(-45deg, #5e31c8 0px, #5e31c8 5px, #c697ff 5px, #c697ff 10px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 900px) {
+            width: 25px;
+            height: 25px;
+        }
+    }
+
+    &-char {
+        font-size: 24px;
+        color: $color-white-smoke;
+
+        @media (max-width: 900px) {
+            font-size: 16px;
+        }
+    }
+
+    &-img {
+        position: absolute;
+        z-index: -1;
+        border-radius: 50%;
+    }
+
+    &-name {
+        font-size: 14px;
+        line-height: 12px;
+        letter-spacing: 0.01em;
+
+        @media (max-width: 900px) {
+            font-size: 12px;
+        }
+    }
+}

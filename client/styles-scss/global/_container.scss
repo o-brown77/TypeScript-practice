@@ -1,0 +1,13 @@
+.container {
+    margin: 0 auto;
+    padding: 15px 30px;
+    background-color: inherit;
+
+    @include vp-1280 {
+        padding: 10px 20px;
+    };
+
+    &:has(.tracks) {
+        padding-left: 26px;
+    }
+}

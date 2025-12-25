@@ -1,0 +1,42 @@
+.header {
+    position: relative;
+
+    @media (max-width: 900px) {
+        margin: 0 0 40px;
+        background-color: $color-white;
+    }
+
+    @media (max-width: 460px) {
+        margin: 0 0 20px;
+    }
+
+    &:has(.nav__menu) {
+        background-color: $color-white-smoke;
+
+        .header__logo {
+            background-color: $color-white;
+            position: absolute;
+            width: 100%;
+            z-index: 2;
+            left: 0;
+            top: 0;
+            padding: 18px 53px;
+        }
+    }
+
+    &__wrapper {
+        @media (max-width: 900px) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+
+    &__logo {
+        @media (max-width: 900px) {
+            position: static;
+            padding: 0;
+            width: 230px;
+        }
+    }
+}
